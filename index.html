@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="/Lending_1/assets/favicon.png" type="image.png">
+    <link rel="icon" href="/Lending_1/assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="index.css">
     <title>Lending_1</title>
 </head>
@@ -36,6 +36,42 @@
             </nav>
         </div>
     </header>
+
+    <div class="mobile-nav" aria-label="mobile nav">
+        <label for="toggler-id" aria-label="open/close nav menu">
+            <svg class="mobile-nav-burger" aria-label="burger icon">
+                <use href="/Lending_1/assets/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+
+        <input type="checkbox" id="toggler-id" class="mobile-nav-toggler">
+
+        <nav class="mobile-nav-menu" aria-label="mobile nav menu">
+            <ul class="mobile-nav-list" aria-label="mobile-nav-list">
+                <li>
+                    <a href="#home-id" class="mobile-nav-link" aria-label="link to home">HOME</a>
+                </li>
+                <li>
+                    <a href="#about-id" class="mobile-nav-link" aria-label="link to about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#history-id" class="mobile-nav-link" aria-label="link to history">HISTORY</a>
+                </li>
+                <li>
+                    <a href="#portfolio-id" class="mobile-nav-link" aria-label="link to portfolio">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#contacts-id" class="mobile-nav-link" aria-label="link to contacts">CONTACTS</a>
+                </li>
+            </ul>
+
+            <label for="toggler-id" class="mobile-nav-close" aria-label="open close nav menu">
+                <svg class="mobile-nav-cross" aria-label="cross icon">
+                    <use href="/Lending_1/assets/sprites.svg#cross-icon"></use>
+                </svg>
+            </label>
+        </nav>
+    </div>
 
     <main aria-label="main">
         <section class="home" aria-label="home section" id="home-id">
@@ -90,8 +126,7 @@
 
                 <img src="/Lending_1/assets/webp/Portfolio_1.webp" alt="photo_1" class="portfolio-photo">
 
-                <p class="portfolio-photo-description" aria-label="portfolio photo description">Зимний обоз в пути,
-                    1857 г. | Winter wagon train on the way, 1857</p>
+                <p class="portfolio-photo-description" aria-label="portfolio photo description">Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857</p>
 
                 <img src="/Lending_1/assets/webp/Portfolio_2.webp" alt="photo_2" class="portfolio-photo">
 
@@ -100,8 +135,7 @@
 
                 <img src="/Lending_1/assets/webp/Portfolio_3.webp" alt="photo_3" class="portfolio-photo">
 
-                <p class="portfolio-photo-description" aria-label="portfolio photo description">Неаполитанский залив
-                    утром, 1893 г. | Gulf of Naples in the morning, 1893</p>
+                <p class="portfolio-photo-description" aria-label="portfolio photo description">Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893</p>
             </div>
         </section>
     </main>
@@ -110,9 +144,9 @@
         <div class="container">
             <h2 class="contacts-title">CONTACTS</h2>
 
-            <button class="contacts-button">
+            <div class="contacts-button">
                 <a href="http://i-aivazovsky.ru/painting" class="button-link" target="_blank">aivazovsky.ru</a>
-            </button>
+            </div>
 
             <address class="socials" aria-label="socials icons">
                 <a href="https://www.youtube.com" target="_blank" aria-label="link to youtube">
